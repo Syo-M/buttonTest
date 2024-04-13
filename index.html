@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="incrementButton">Increment Counter</button>
+
+    <script>
+        document.getElementById("incrementButton").addEventListener("click", function() {
+            fetch('https://script.google.com/macros/s/AKfycbzMV_UJkmTnqk1vykXmDBdTtSR91pAQHDULK1YSjHPz6mT7c068Vzb__Xr_pVRMexejOA/exec')
+            .then(response => console.log("Counter incremented successfully"))
+            .catch(error => console.error("Error incrementing counter: ", error));
+        });
+        </script>
+</body>
+</html>
